@@ -15,7 +15,7 @@ def savefile():
     file.close()
 
 def openfile():
-    file = filedialog.askopenfile(mode='rb')
+    file = filedialog.askopenfile(mode='rb', filetype = ("Text File", "*.txt"))
     contents = file.read()
     txt.insert('1.0', contents)
     file.close()
