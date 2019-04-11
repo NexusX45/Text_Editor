@@ -9,7 +9,7 @@ txt = scrolledtext.ScrolledText(top, width = 100, height = 80)
 #Functions
 
 def savefile():
-    file = filedialog.asksaveasfile(mode='w', filetypes = (("Text Files", "*.txt"), ("All Files", "*.*")))
+    file = filedialog.asksaveasfile(mode='w')
     data = txt.get('1.0', END+'-1c')
     file.write(data)
     file.close()
